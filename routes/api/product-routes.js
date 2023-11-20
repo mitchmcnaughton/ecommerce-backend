@@ -30,7 +30,7 @@ router.get('/:id', async (req, res) => {
     });
     //if data doesnt exist
     if (!productData) {
-      res.status(404).json({ message: 'No category found with that id!' });
+      res.status(404).json({ message: 'No product found with that id!' });
       return;
     }
 
@@ -124,7 +124,7 @@ router.delete('/:id', async (req, res) => {
     const deleteProduct = await Product.findByPk(req.params.id);
     //if data doesnt exist
     if (!deleteProduct) {
-        res.status(404).json({ message: 'No category found with that specific id'})
+        res.status(404).json({ message: 'No Product found with that specific id'})
         return;
     }
 
