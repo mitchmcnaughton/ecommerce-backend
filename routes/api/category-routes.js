@@ -60,10 +60,10 @@ router.put('/:id', async (req, res) => {
         return;
       }
 
-      await updatedCategoryData.update(req.body, {
+      await categoryData.update(req.body, {
         include:[{ model: Product}]
       });
-      res.status(200).name(updatedCategoryData)
+      res.status(200).name(categoryData)
   } catch (err) {
     res.status(400).json(err);
   }
