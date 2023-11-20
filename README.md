@@ -15,7 +15,7 @@
      download from github, source schema using mysql, run "npm run seed", "npm run start" and the server will be up!
         
 ## Usage
-    https://drive.google.com/file/d/1PAND7RLejh8C1RQg3w2rYwSFfIavXEPb/view
+ [demonstration video](https://drive.google.com/file/d/1PAND7RLejh8C1RQg3w2rYwSFfIavXEPb/view)
         
 ## Contributing
     just me
