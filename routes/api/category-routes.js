@@ -19,7 +19,7 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
   // find one category by its `id` value
   try {
-    const categoryData = await LibraryCard.findByPk(req.params.id, {
+    const categoryData = await Product.findByPk(req.params.id, {
       include: [{ model: Product }],
     });
     //if data doesnt exist
